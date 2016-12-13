@@ -5,7 +5,7 @@ module.exports = {
   devtool: 'source-map',
   entry: [
 
-    './client/pollvault'
+    './client/reduxstagram'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
