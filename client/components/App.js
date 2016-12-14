@@ -5,6 +5,7 @@ import Main from './Main';
 
 function mapStateToProps(state) {
   return {
+    polls: state.polls,
     posts: state.posts,
     comments: state.comments
   }

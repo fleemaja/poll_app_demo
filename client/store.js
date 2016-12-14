@@ -7,9 +7,11 @@ import rootReducer from './reducers/index';
 
 import comments from './data/comments';
 import posts from './data/posts';
+import polls from './data/polls';
 
 // create an object for the default data
 const defaultState = {
+  polls,
   posts,
   comments
 };

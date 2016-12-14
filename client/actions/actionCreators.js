@@ -6,6 +6,14 @@ export function increment(index) {
   }
 }
 
+// add vote
+export function vote(index) {
+  return {
+    type: 'INCREMENT_VOTES',
+    index
+  }
+}
+
 // add comment
 export function addComment(postId, author, comment) {
   return {
