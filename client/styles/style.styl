@@ -5,6 +5,13 @@
 body
   background offwhite
 
+.result-bar
+  height 24px
+  line-height 24px
+  margin-bottom 18px
+  border-radius 5px
+  white-space nowrap
+
 .photo-grid
   display flex
   flex-wrap wrap
@@ -94,32 +101,6 @@ body
   left 50%
   top 50%
   pointer-events none
-
-
-/*
-  Buttons
-*/
-
-.control-buttons
-  display flex
-  justify-content space-between
-
-button, .button
-  border 2px solid lighten(grey, 90%)
-  background none
-  flex-basis 48%
-  display inline-block
-  line-height 2
-  text-decoration none
-  padding 5px
-  text-align center
-  font-size 15px
-  color blue
-  transition all 0.2s
-  box-sizing padding-box
-  &:hover, &:focus
-    border-color blue
-    outline 0
 
 /*
   Cowboy style speech bubble - you should probably use an SVG for this if you are doing more icons.
