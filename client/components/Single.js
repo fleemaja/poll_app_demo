@@ -1,20 +1,20 @@
 import React from 'react';
-import Photo from './Photo';
+import Poll from './Poll';
 import Comments from './Comments';
 
 const Single = React.createClass({
   render() {
-    const { postId } = this.props.params;
+    const { pollId } = this.props.params;
 
-    const i = this.props.posts.findIndex((post) => post.code === postId);
-    const post = this.props.posts[i];
+    const i = this.props.polls.findIndex((poll) => poll.code === pollId);
+    const poll = this.props.polls[i];
 
-    const postComments = this.props.comments[postId] || [];
+    const pollComments = this.props.comments[pollId] || [];
 
     return (
-      <div className="single-photo">
-        <Photo i={i} post={post} {...this.props} />
-        <Comments postComments={postComments} {...this.props} />
+      <div>
+        <Poll i={i} poll={poll} {...this.props} />
+        <Comments pollComments={pollComments} {...this.props} />
       </div>
     )
   }

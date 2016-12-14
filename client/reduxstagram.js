@@ -21,7 +21,7 @@ const router = (
     <Router history={history}>
       <Route path="/" component={App}>
         <IndexRoute component={PollGrid}></IndexRoute>
-        // <Route path="/view/:postId" component={Single}></Route>
+        <Route path="/view/:pollId" component={Single}></Route>
       </Route>
     </Router>
   </Provider>

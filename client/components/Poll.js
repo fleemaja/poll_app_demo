@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-import CSSTransitionGroup from 'react-addons-css-transition-group';
 import Paper from 'material-ui/Paper';
 import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
 import RaisedButton from 'material-ui/RaisedButton';
@@ -33,26 +32,29 @@ const Poll = React.createClass({
   },
   render() {
     const poll = this.props.poll;
+    const comments = this.props.comments;
     const pollVotes = poll.votes;
     const that = this;
     if (this.state.voted) {
       return (
         <Paper style={styles.paper}>
           <div>
-            <p>{poll.title}</p>
-            <div>
-              {poll.options.map(function(o){
+            <Link className="button" to={`/view/${poll.code}`}>
+              <p>{poll.title}</p>
+            </Link>
+            <div className="options">
+              {poll.options.map(function(o, i){
                 const percent = o['votes']/pollVotes;
                 if (that.state.selectedOption === o['option']) {
                   return (
                     <div className="result-bar" style={{width: percent * 280, background: '#ddf'}}>
-                      {Math.round(percent * 100) + "% " + o['option']}
+                      <span><strong>{Math.round(percent * 100) + "% "}</strong><span>{o['option']}</span></span>
                     </div>
                   )
                 } else {
                   return (
                     <div className="result-bar" style={{width: percent * 280, background: '#ddd'}}>
-                      {Math.round(percent * 100) + "% " + o['option']}
+                      <span><strong>{Math.round(percent * 100) + "% "}</strong><span>{o['option']}</span></span>
                     </div>
                   )
                 }
@@ -65,13 +67,17 @@ const Poll = React.createClass({
       return (
         <Paper style={styles.paper}>
           <div>
-            <p>{poll.title}</p>
-            <RadioButtonGroup name="option" onChange={this.selectOption}>
-              {poll.options.map(function(o){
-                return <RadioButton value={o['option']} label={o['option']}
-                       style={styles.radioButton} />
-              })}
-            </RadioButtonGroup>
+            <Link className="button" to={`/view/${poll.code}`}>
+              <p>{poll.title}</p>
+            </Link>
+            <div className="options">
+              <RadioButtonGroup name="option" onChange={this.selectOption}>
+                {poll.options.map(function(o, i){
+                  return <RadioButton value={o['option']} label={o['option']}
+                         style={styles.radioButton} />
+                })}
+              </RadioButtonGroup>
+            </div>
             <RaisedButton disabled={this.state.disabled} onClick={this.makeVote} label="Vote" style={styles.raisedButton} />
           </div>
         </Paper>
