@@ -16,22 +16,20 @@ const DonutChart = React.createClass({
   render() {
     const poll = this.props.poll;
     const data = {
-    	labels: [
-    		'Red',
-    		'Green',
-    		'Yellow'
-    	],
+    	labels: poll.options.map(function(o) { return o['option']}),
     	datasets: [{
-    		data: [300, 50, 100],
+    		data: poll.options.map(function(o) { return o['votes']}),
     		backgroundColor: [
     		'#FF6384',
     		'#36A2EB',
-    		'#FFCE56'
+    		'#FFCE56',
+        '#36DBA2'
     		],
     		hoverBackgroundColor: [
     		'#FF6384',
     		'#36A2EB',
-    		'#FFCE56'
+    		'#FFCE56',
+        '#36EBA2'
     		]
     	}]
     };
