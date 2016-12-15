@@ -1,6 +1,7 @@
 import React from 'react';
 import Poll from './Poll';
 import Comments from './Comments';
+import DonutChart from './Donut.js';
 
 const Single = React.createClass({
   render() {
@@ -14,6 +15,7 @@ const Single = React.createClass({
     return (
       <div>
         <Poll i={i} poll={poll} {...this.props} />
+        <DonutChart poll={poll} />
         <Comments pollComments={pollComments} {...this.props} />
       </div>
     )
