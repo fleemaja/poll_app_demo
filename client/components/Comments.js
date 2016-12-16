@@ -1,11 +1,11 @@
 import React from 'react';
 import Paper from 'material-ui/Paper';
 import TextField from 'material-ui/TextField';
-import FaAlignLeft from 'react-icons/lib/fa/align-left';
+import RaisedButton from 'material-ui/RaisedButton';
 
 const Comments = React.createClass({
   getInitialState() {
-    return ({ author: "", comment: "" })
+    return ({ author: "", comment: "", aErrorText: "", cErrorText: "" })
   },
   _handleAuthorChange: function(e) {
         this.setState({
@@ -16,6 +16,20 @@ const Comments = React.createClass({
         this.setState({
             comment: e.target.value
         });
+  },
+  _setAuthorErrorText: function() {
+    if (this.state.author === "") {
+      this.setState({aErrorText: "Author name is required to submit a comment"});
+    } else {
+      this.setState({aErrorText: ""})
+    }
+  },
+  _setCommentErrorText: function() {
+    if (this.state.comment === "") {
+      this.setState({cErrorText: "Comment text is required to submit a comment"});
+    } else {
+      this.setState({cErrorText: ""})
+    }
   },
   renderComment(comment, i) {
     return (
@@ -33,10 +47,18 @@ const Comments = React.createClass({
     const { pollId } = this.props.params;
     const author = this.state.author;
     const comment = this.state.comment;
-    this.props.addComment(pollId, author, comment);
-    this.setState(this.getInitialState());
+    if (author === "" || comment === "") {
+      this._setAuthorErrorText();
+      this._setCommentErrorText();
+    } else {
+      this.props.addComment(pollId, author, comment);
+      this.setState(this.getInitialState());
+    }
   },
   render() {
+    const style = {
+      "margin-top": 20,
+    };
     return (
       <div className="comments-section">
         <h2>Comments</h2>
@@ -45,14 +67,19 @@ const Comments = React.createClass({
             <form ref="commentForm" className="comment-form" onSubmit={this.handleSubmit}>
               <TextField value={this.state.author}
                          onChange={this._handleAuthorChange}
+                         onBlur={this._setAuthorErrorText}
                          hintText="Choose a Name for this Comment"
+                         errorText={this.state.aErrorText}
                          floatingLabelText="Author"/><br/>
               <TextField value={this.state.comment}
                          onChange={this._handleCommentChange}
+                         onBlur={this._setCommentErrorText}
                          fullWidth={true}
                          hintText="Comment About this Poll"
+                         errorText={this.state.cErrorText}
                          floatingLabelText="Comment"/>
               <input type="submit" hidden />
+              <RaisedButton label="Submit" style={style} primary={true} onClick={this.handleSubmit} />
             </form>
             <div className="commented">
               {this.props.pollComments.map(this.renderComment)}
