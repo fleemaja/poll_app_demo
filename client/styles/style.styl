@@ -4,6 +4,11 @@
 body
   background offwhite
 
+.poll-title
+  text-decoration none
+  &:hover
+    color #36A2EB
+
 .result-bar
   height 24px
   line-height 24px
@@ -19,7 +24,7 @@ body
   margin 0 auto
 
 .options
-  font-size 12px
+  font-size 16px
 
 .photo-grid
   display flex
@@ -90,8 +95,8 @@ body
 .comment:nth-last-child(1)
   padding-bottom 60px
 
-.commented
-  margin 40px 0
+.comment-form
+  padding-bottom 40px
 
 .comments-section
   margin 40px auto
@@ -103,37 +108,3 @@ body
 
 .grid-photo-wrap
   position relative
-
-.likes-heart
-  background url(http://f.cl.ly/items/3Y373q2Q3J3Y1j203n0m/Bitmap-3.png) center no-repeat
-  background-size contain
-  font-size 2rem
-  padding 1rem
-  position absolute
-  color blue
-  left 50%
-  top 50%
-  pointer-events none
-
-/*
-  Cowboy style speech bubble - you should probably use an SVG for this if you are doing more icons.
-*/
-.speech-bubble
-  size = 1.25rem
-  width size * 1.2
-  height size
-  background blue
-  display inline-block
-  border-radius 50%
-  position relative
-  &:after
-    display inline-block
-    position absolute
-    content ''
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 size size 0
-    border-color: transparent blue transparent transparent
-    top 30%
-    left 0

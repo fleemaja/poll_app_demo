@@ -1,6 +1,7 @@
 import React from 'react';
 import Paper from 'material-ui/Paper';
 import TextField from 'material-ui/TextField';
+import FaAlignLeft from 'react-icons/lib/fa/align-left';
 
 const Comments = React.createClass({
   getInitialState() {

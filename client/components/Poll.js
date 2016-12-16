@@ -4,7 +4,6 @@ import Paper from 'material-ui/Paper';
 import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
 import RaisedButton from 'material-ui/RaisedButton';
 
-
 const styles = {
   paper: {
       width: 300,
@@ -39,7 +38,7 @@ const Poll = React.createClass({
       return (
         <Paper style={styles.paper}>
           <div>
-            <Link className="button" to={`/view/${poll.code}`}>
+            <Link className="poll-title" to={`/view/${poll.code}`}>
               <p>{poll.title}</p>
             </Link>
             <div className="options">
@@ -47,7 +46,7 @@ const Poll = React.createClass({
                 const percent = o['votes']/pollVotes;
                 if (that.state.selectedOption === o['option']) {
                   return (
-                    <div className="result-bar" style={{width: percent * 280, background: '#ddf'}}>
+                    <div className="result-bar" style={{width: percent * 280, background: '#77C7F7'}}>
                       <span><strong>{Math.round(percent * 100) + "% "}</strong><span>{o['option']}</span></span>
                     </div>
                   )
@@ -67,7 +66,7 @@ const Poll = React.createClass({
       return (
         <Paper style={styles.paper}>
           <div>
-            <Link className="button" to={`/view/${poll.code}`}>
+            <Link className="poll-title" to={`/view/${poll.code}`}>
               <p>{poll.title}</p>
             </Link>
             <div className="options">
