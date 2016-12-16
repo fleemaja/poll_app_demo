@@ -1,6 +1,21 @@
 import React from 'react';
+import Paper from 'material-ui/Paper';
+import TextField from 'material-ui/TextField';
 
 const Comments = React.createClass({
+  getInitialState() {
+    return ({ author: "", comment: "" })
+  },
+  _handleAuthorChange: function(e) {
+        this.setState({
+            author: e.target.value
+        });
+  },
+  _handleCommentChange: function(e) {
+        this.setState({
+            comment: e.target.value
+        });
+  },
   renderComment(comment, i) {
     return (
       <div className="comment" key={i}>
@@ -15,20 +30,34 @@ const Comments = React.createClass({
   handleSubmit(e) {
     e.preventDefault();
     const { pollId } = this.props.params;
-    const author = this.refs.author.value;
-    const comment = this.refs.comment.value;
+    const author = this.state.author;
+    const comment = this.state.comment;
     this.props.addComment(pollId, author, comment);
-    this.refs.commentForm.reset();
+    this.setState(this.getInitialState());
   },
   render() {
     return (
-      <div className="comments">
-        {this.props.pollComments.map(this.renderComment)}
-        <form ref="commentForm" className="comment-form" onSubmit={this.handleSubmit}>
-          <input type="text" ref="author" placeholder="author"/>
-          <input type="text" ref="comment" placeholder="comment"/>
-          <input type="submit" hidden />
-        </form>
+      <div className="comments-section">
+        <h2>Comments</h2>
+        <Paper>
+          <div className="comments-content">
+            <form ref="commentForm" className="comment-form" onSubmit={this.handleSubmit}>
+              <TextField value={this.state.author}
+                         onChange={this._handleAuthorChange}
+                         hintText="Choose a Name for this Comment"
+                         floatingLabelText="Author"/><br/>
+              <TextField value={this.state.comment}
+                         onChange={this._handleCommentChange}
+                         fullWidth={true}
+                         hintText="Comment About this Poll"
+                         floatingLabelText="Comment"/>
+              <input type="submit" hidden />
+            </form>
+            <div className="commented">
+              {this.props.pollComments.map(this.renderComment)}
+            </div>
+          </div>
+        </Paper>
       </div>
     )
   }

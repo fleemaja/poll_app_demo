@@ -39,8 +39,8 @@ const DonutChart = React.createClass({
       <Paper style={styles.paper}>
         <Doughnut
           data={data}
-          width={280}
-          height={280}
+          width={300}
+          height={300}
           options={{
               maintainAspectRatio: false
           }}

@@ -16,7 +16,7 @@ body
       font-size 16px
 
 .masonry-grid
-  margin: 0 auto
+  margin 0 auto
 
 .options
   font-size 12px
@@ -76,8 +76,9 @@ body
 .comment
   border-bottom 1px solid lightgrey
   padding 0.5rem 0
+  margin 10px 0
   p
-    font-size 1.2rem
+    font-size 1.5rem
     margin 0
   strong
     color blue
@@ -86,15 +87,18 @@ body
     .remove-comment
       opacity 1
 
-.comment-form
-  input, textarea
-    width 100%
-    border 0
-    font-size 1.3rem
-    padding 1rem 0
-    border-bottom 1px solid lightgrey
-    outline none
-    resize vertical
+.comment:nth-last-child(1)
+  padding-bottom 60px
+
+.commented
+  margin 40px 0
+
+.comments-section
+  margin 40px auto
+  max-width 680px
+
+.comments-content
+  margin 0 40px
 
 
 .grid-photo-wrap
