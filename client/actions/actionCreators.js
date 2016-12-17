@@ -7,11 +7,11 @@ export function increment(index) {
 }
 
 // vote
-export function vote(index, option) {
+export function vote(index, optionIndex) {
   return {
     type: 'INCREMENT_VOTES',
     index,
-    option
+    optionIndex
   }
 }
 

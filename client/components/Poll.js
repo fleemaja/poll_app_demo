@@ -24,6 +24,15 @@ const Poll = React.createClass({
     return { voted: false, disabled: true, selectedOption: "" };
   },
   makeVote() {
+    const index = this.props.i;
+    const selectedOption = this.state.selectedOption;
+    var optionIndex;
+    this.props.poll.options.forEach(function(o, j) {
+      if (o['option'] === selectedOption) {
+        optionIndex = j;
+      }
+    });
+    this.props.vote(index, optionIndex);
     this.setState({ voted: true });
   },
   selectOption(changeEvent) {

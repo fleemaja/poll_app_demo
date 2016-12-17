@@ -1,10 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import {blue500} from 'material-ui/styles/colors';
 import Paper from 'material-ui/Paper';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 import FaAlignLeft from 'react-icons/lib/fa/align-left';
+
+const muiTheme = getMuiTheme({
+  palette: {
+    primary1Color: blue500
+  },
+  appBar: {
+    height: 50,
+  },
+});
 
 const Main = React.createClass({
   render() {
@@ -14,7 +25,7 @@ const Main = React.createClass({
       }
     };
     return (
-      <MuiThemeProvider>
+      <MuiThemeProvider muiTheme={muiTheme}>
         <div>
           <Paper>
             <h1>
