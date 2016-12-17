@@ -5,9 +5,12 @@ import { browserHistory } from 'react-router';
 // import the root reducer
 import rootReducer from './reducers/index';
 
-import comments from './data/comments';
+import commentData from './data/comments';
 import posts from './data/posts';
-import polls from './data/polls';
+import pollData from './data/polls';
+
+const comments = JSON.parse(localStorage.getItem('_comments')) || commentData;
+const polls = JSON.parse(localStorage.getItem('_polls')) || pollData;
 
 // create an object for the default data
 const defaultState = {

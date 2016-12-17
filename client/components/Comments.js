@@ -58,7 +58,7 @@ const Comments = React.createClass({
   },
   render() {
     const style = {
-      "margin-top": 20,
+      "marginTop": 20,
     };
     return (
       <div className="comments-section">

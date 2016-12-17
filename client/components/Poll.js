@@ -21,11 +21,28 @@ const styles = {
 
 const Poll = React.createClass({
   getInitialState() {
-    return { voted: false, disabled: true, selectedOption: "" };
+    const localPolls = JSON.parse(localStorage.getItem('_userVotes')) || null;
+    var userVoted = false;
+    var userOption = "";
+    const index = this.props.i;
+    if (localPolls !== null) {
+      localPolls.forEach(function(lp) {
+        if (lp.i == index) {
+          userVoted = true;
+          userOption = lp.option;
+        }
+      })
+    }
+    return { voted: userVoted, disabled: true, selectedOption: userOption };
   },
   makeVote() {
     const index = this.props.i;
     const selectedOption = this.state.selectedOption;
+
+    const localVotes = JSON.parse(localStorage.getItem('_userVotes')) || [];
+    localVotes.push({"i": index, "option": selectedOption });
+    localStorage.setItem('_userVotes', JSON.stringify(localVotes));
+
     var optionIndex;
     this.props.poll.options.forEach(function(o, j) {
       if (o['option'] === selectedOption) {
