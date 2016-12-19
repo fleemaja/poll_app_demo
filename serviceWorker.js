@@ -1,14 +1,14 @@
 importScripts('serviceworker-cache-polyfill.js');
 
-var staticCacheName = 'polls-v0.00';
+var staticCacheName = 'polls-v0.09';
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(staticCacheName).then(function(cache) {
       return cache.addAll([
         '/',
-        '/index.html',
-        '/static/bundle.js'
+        'index.html',
+        'static/bundle.js'
       ]);
     })
   );

@@ -1,11 +1,3 @@
-// increment
-export function increment(index) {
-  return {
-    type: 'INCREMENT_LIKES',
-    index
-  }
-}
-
 // vote
 export function vote(index, optionIndex) {
   return {

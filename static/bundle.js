@@ -65,7 +65,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "bb73bb31a2203050b698"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ba7d03c71cd2918966c9"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -1753,11 +1753,7 @@
 
 	var _Single2 = _interopRequireDefault(_Single);
 
-	var _PhotoGrid = __webpack_require__(868);
-
-	var _PhotoGrid2 = _interopRequireDefault(_PhotoGrid);
-
-	var _PollGrid = __webpack_require__(876);
+	var _PollGrid = __webpack_require__(868);
 
 	var _PollGrid2 = _interopRequireDefault(_PollGrid);
 
@@ -1765,13 +1761,13 @@
 
 	var _reactRedux = __webpack_require__(220);
 
-	var _store = __webpack_require__(877);
+	var _store = __webpack_require__(869);
 
 	var _store2 = _interopRequireDefault(_store);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	// Import css
+	// Import Components
 	var router = _react2.default.createElement(
 	  _reactRedux.Provider,
 	  { store: _store2.default },
@@ -1790,7 +1786,7 @@
 	// import react router deps
 
 
-	// Import Components
+	// Import css
 
 
 	(0, _reactDom.render)(router, document.getElementById('root'));
@@ -23521,7 +23517,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);", ""]);
 
 	// module
-	exports.push([module.id, "article,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nnav,\nsection,\nsummary {\n  display: block;\n}\naudio,\ncanvas,\nvideo {\n  display: inline-block;\n}\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n[hidden] {\n  display: none;\n}\nhtml {\n  font-family: sans-serif;\n  -webkit-text-size-adjust: 100%;\n  -ms-text-size-adjust: 100%;\n}\na:focus {\n  outline: thin dotted;\n}\na:active,\na:hover {\n  outline: 0;\n}\nh1 {\n  font-size: 2em;\n}\nabbr[title] {\n  border-bottom: 1px dotted;\n}\nb,\nstrong {\n  font-weight: 700;\n}\ndfn {\n  font-style: italic;\n}\nmark {\n  background: #ff0;\n  color: #000;\n}\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, serif;\n  font-size: 1em;\n}\npre {\n  white-space: pre-wrap;\n  word-wrap: break-word;\n}\nq {\n  quotes: 2 1C 2 1D 2 18 2 19;\n}\nsmall {\n  font-size: 80%;\n}\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\nsup {\n  top: -0.5em;\n}\nsub {\n  bottom: -0.25em;\n}\nimg {\n  border: 0;\n}\nsvg:not(:root) {\n  overflow: hidden;\n}\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\nbutton,\ninput,\nselect,\ntextarea {\n  font-family: inherit;\n  font-size: 100%;\n  margin: 0;\n}\nbutton,\ninput {\n  line-height: normal;\n}\nbutton,\nhtml input[type=button],\ninput[type=reset],\ninput[type=submit] {\n  -webkit-appearance: button;\n  cursor: pointer;\n}\nbutton[disabled],\ninput[disabled] {\n  cursor: default;\n}\ninput[type=checkbox],\ninput[type=radio] {\n  box-sizing: border-box;\n  padding: 0;\n}\ninput[type=search] {\n  -webkit-appearance: textfield;\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\ninput[type=search]::-webkit-search-cancel-button,\ninput[type=search]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\ntextarea {\n  overflow: auto;\n  vertical-align: top;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\nbody,\nfigure {\n  margin: 0;\n}\nlegend,\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n.clearfix:after {\n  visibility: hidden;\n  display: block;\n  font-size: 0;\n  content: \" \";\n  clear: both;\n  height: 0;\n}\n* {\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n}\nimg {\n  max-width: 100%;\n}\nhtml {\n  font-size: 10px;\n  font-family: 'Roboto', sans-serif;\n}\np {\n  font-size: 1.8rem;\n  line-height: 1.5;\n  margin: 0 0 20px 0;\n}\nh1 {\n  text-align: center;\n  background: #fff;\n  font-weight: 900;\n  font-size: 7rem;\n  margin: 0;\n  letter-spacing: -1px;\n}\nh1 a {\n  color: #999;\n  text-decoration: none;\n}\nh1 a:focus {\n  outline: 0;\n}\nh2 {\n  font-size: 3rem;\n  margin-left: 20px;\n  color: #999;\n  letter-spacing: -1px;\n}\nbody {\n  background: #fafafa;\n}\n.poll-title {\n  text-decoration: none;\n}\n.poll-title:hover {\n  color: #36a2eb;\n}\n.result-bar {\n  height: 24px;\n  line-height: 24px;\n  margin-bottom: 18px;\n  border-radius: 5px;\n  white-space: nowrap;\n}\n.result-bar span {\n  margin: 0 0 0 5px;\n}\n.result-bar span strong {\n  font-size: 16px;\n}\n.masonry-grid {\n  margin: 0 auto;\n}\n.options {\n  font-size: 16px;\n}\n.photo-grid {\n  display: flex;\n  flex-wrap: wrap;\n  max-width: 1200px;\n  margin: 0 auto;\n}\n.grid-figure,\n.single-photo {\n  flex-basis: calc(33.333% - 4rem);\n  flex-grow: 1;\n  flex-shrink: 0;\n  margin: 0 2rem 2rem 2rem;\n  padding: 2rem;\n  border: 1px solid #edeeed;\n  background: #fff;\n  box-shadow: 0 0 0 5px rgba(0,0,0,0.03);\n  position: relative;\n}\n.single-photo {\n  max-width: 900px;\n  margin: 0 auto;\n  display: flex;\n  background: #fff;\n}\n.single-photo .grid-figure {\n  box-shadow: none;\n  margin: 0 2rem 0 0;\n  border: 0;\n  padding: 0;\n  flex: 1 0 60%;\n  max-width: 60%;\n}\n.single-photo .comments {\n  flex: 1 0 40%;\n  max-width: 40%;\n}\n.single-photo .grid-photo {\n  width: 100%;\n  margin: 0;\n}\n.grid-photo {\n  width: calc(100% + 4rem);\n  margin-left: -2rem;\n  margin-top: -2rem;\n  max-width: none;\n}\n.remove-comment {\n  background: none;\n  border: 0;\n  line-height: 1;\n  opacity: 0;\n}\n.remove-comment:hover {\n  color: #f00;\n}\n.comment {\n  border-bottom: 1px solid #edeeed;\n  padding: 0.5rem 0;\n  margin: 10px 0;\n}\n.comment p {\n  font-size: 1.5rem;\n  margin: 0;\n}\n.comment strong {\n  color: #125688;\n  margin-right: 5px;\n}\n.comment:hover .remove-comment {\n  opacity: 1;\n}\n.comment:nth-last-child(1) {\n  padding-bottom: 60px;\n}\n.comment-form {\n  padding-bottom: 40px;\n}\n.comments-section {\n  margin: 40px auto;\n  max-width: 680px;\n}\n.comments-content {\n  margin: 0 40px;\n}\n.grid-photo-wrap {\n  position: relative;\n}\n", ""]);
+	exports.push([module.id, "article,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nnav,\nsection,\nsummary {\n  display: block;\n}\naudio,\ncanvas,\nvideo {\n  display: inline-block;\n}\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n[hidden] {\n  display: none;\n}\nhtml {\n  font-family: sans-serif;\n  -webkit-text-size-adjust: 100%;\n  -ms-text-size-adjust: 100%;\n}\na:focus {\n  outline: thin dotted;\n}\na:active,\na:hover {\n  outline: 0;\n}\nh1 {\n  font-size: 2em;\n}\nabbr[title] {\n  border-bottom: 1px dotted;\n}\nb,\nstrong {\n  font-weight: 700;\n}\ndfn {\n  font-style: italic;\n}\nmark {\n  background: #ff0;\n  color: #000;\n}\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, serif;\n  font-size: 1em;\n}\npre {\n  white-space: pre-wrap;\n  word-wrap: break-word;\n}\nq {\n  quotes: 2 1C 2 1D 2 18 2 19;\n}\nsmall {\n  font-size: 80%;\n}\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\nsup {\n  top: -0.5em;\n}\nsub {\n  bottom: -0.25em;\n}\nimg {\n  border: 0;\n}\nsvg:not(:root) {\n  overflow: hidden;\n}\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\nbutton,\ninput,\nselect,\ntextarea {\n  font-family: inherit;\n  font-size: 100%;\n  margin: 0;\n}\nbutton,\ninput {\n  line-height: normal;\n}\nbutton,\nhtml input[type=button],\ninput[type=reset],\ninput[type=submit] {\n  -webkit-appearance: button;\n  cursor: pointer;\n}\nbutton[disabled],\ninput[disabled] {\n  cursor: default;\n}\ninput[type=checkbox],\ninput[type=radio] {\n  box-sizing: border-box;\n  padding: 0;\n}\ninput[type=search] {\n  -webkit-appearance: textfield;\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\ninput[type=search]::-webkit-search-cancel-button,\ninput[type=search]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\ntextarea {\n  overflow: auto;\n  vertical-align: top;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\nbody,\nfigure {\n  margin: 0;\n}\nlegend,\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n.clearfix:after {\n  visibility: hidden;\n  display: block;\n  font-size: 0;\n  content: \" \";\n  clear: both;\n  height: 0;\n}\n* {\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n}\nimg {\n  max-width: 100%;\n}\nhtml {\n  font-size: 10px;\n  font-family: 'Roboto', sans-serif;\n}\np {\n  font-size: 1.8rem;\n  line-height: 1.5;\n  margin: 0 0 20px 0;\n}\nh1 {\n  text-align: center;\n  background: #fff;\n  font-weight: 900;\n  font-size: 7rem;\n  margin: 0;\n  letter-spacing: -1px;\n}\nh1 a {\n  color: #999;\n  text-decoration: none;\n}\nh1 a:focus {\n  outline: 0;\n}\nh2 {\n  font-size: 3rem;\n  margin-left: 20px;\n  color: #999;\n  letter-spacing: -1px;\n}\nbody {\n  background: #fafafa;\n}\n.poll-title {\n  text-decoration: none;\n  color: #428bca;\n}\n.result-bar {\n  height: 24px;\n  line-height: 24px;\n  margin-bottom: 18px;\n  border-radius: 5px;\n  white-space: nowrap;\n}\n.result-bar span {\n  margin: 0 0 0 5px;\n}\n.result-bar span strong {\n  font-size: 16px;\n}\n.masonry-grid {\n  margin: 0 auto;\n}\n.options {\n  font-size: 16px;\n}\n.photo-grid {\n  display: flex;\n  flex-wrap: wrap;\n  max-width: 1200px;\n  margin: 0 auto;\n}\n.grid-figure,\n.single-photo {\n  flex-basis: calc(33.333% - 4rem);\n  flex-grow: 1;\n  flex-shrink: 0;\n  margin: 0 2rem 2rem 2rem;\n  padding: 2rem;\n  border: 1px solid #edeeed;\n  background: #fff;\n  box-shadow: 0 0 0 5px rgba(0,0,0,0.03);\n  position: relative;\n}\n.single-photo {\n  max-width: 900px;\n  margin: 0 auto;\n  display: flex;\n  background: #fff;\n}\n.single-photo .grid-figure {\n  box-shadow: none;\n  margin: 0 2rem 0 0;\n  border: 0;\n  padding: 0;\n  flex: 1 0 60%;\n  max-width: 60%;\n}\n.single-photo .comments {\n  flex: 1 0 40%;\n  max-width: 40%;\n}\n.single-photo .grid-photo {\n  width: 100%;\n  margin: 0;\n}\n.grid-photo {\n  width: calc(100% + 4rem);\n  margin-left: -2rem;\n  margin-top: -2rem;\n  max-width: none;\n}\n.remove-comment {\n  background: none;\n  border: 0;\n  line-height: 1;\n  opacity: 0;\n}\n.remove-comment:hover {\n  color: #f00;\n}\n.comment {\n  border-bottom: 1px solid #edeeed;\n  padding: 0.5rem 0;\n  margin: 10px 0;\n}\n.comment p {\n  font-size: 1.5rem;\n  margin: 0;\n}\n.comment strong {\n  color: #125688;\n  margin-right: 5px;\n}\n.comment:hover .remove-comment {\n  opacity: 1;\n}\n.comment:nth-last-child(1) {\n  padding-bottom: 60px;\n}\n.comment-form {\n  padding-bottom: 40px;\n}\n.comments-section {\n  margin: 40px auto;\n  max-width: 680px;\n}\n.comments-content {\n  margin: 0 40px;\n}\n.grid-photo-wrap {\n  position: relative;\n}\n", ""]);
 
 	// exports
 
@@ -23863,7 +23859,6 @@
 	function mapStateToProps(state) {
 	  return {
 	    polls: state.polls,
-	    posts: state.posts,
 	    comments: state.comments
 	  };
 	}
@@ -25906,18 +25901,9 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.increment = increment;
 	exports.vote = vote;
 	exports.addComment = addComment;
 	exports.removeComment = removeComment;
-	// increment
-	function increment(index) {
-	  return {
-	    type: 'INCREMENT_LIKES',
-	    index: index
-	  };
-	}
-
 	// vote
 	function vote(index, optionIndex) {
 	  return {
@@ -89671,735 +89657,6 @@
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _Photo = __webpack_require__(869);
-
-	var _Photo2 = _interopRequireDefault(_Photo);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var _components = {
-	  _component: {}
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: '/Users/drew/Desktop/poll_app_demo/client/components/PhotoGrid.js',
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	var _reactTransformCatchErrors2 = (0, _reactTransformCatchErrors4.default)({
-	  filename: '/Users/drew/Desktop/poll_app_demo/client/components/PhotoGrid.js',
-	  components: _components,
-	  locals: [],
-	  imports: [_react3.default, _redboxReact3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(_reactTransformCatchErrors2(Component, id), id);
-	  };
-	}
-
-	var PhotoGrid = _wrapComponent('_component')(_react3.default.createClass({
-	  displayName: 'PhotoGrid',
-	  render: function render() {
-	    var _this = this;
-
-	    return _react3.default.createElement(
-	      'div',
-	      { className: 'photo-grid' },
-	      this.props.posts.map(function (post, i) {
-	        return _react3.default.createElement(_Photo2.default, _extends({}, _this.props, { key: i, i: i, post: post }));
-	      })
-	    );
-	  }
-	}));
-
-	exports.default = PhotoGrid;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)(module)))
-
-/***/ },
-/* 869 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _redboxReact2 = __webpack_require__(241);
-
-	var _redboxReact3 = _interopRequireDefault(_redboxReact2);
-
-	var _reactTransformCatchErrors3 = __webpack_require__(247);
-
-	var _reactTransformCatchErrors4 = _interopRequireDefault(_reactTransformCatchErrors3);
-
-	var _react2 = __webpack_require__(13);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(248);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _reactRouter = __webpack_require__(397);
-
-	var _reactAddonsCssTransitionGroup = __webpack_require__(870);
-
-	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var _components = {
-	  _component: {}
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: '/Users/drew/Desktop/poll_app_demo/client/components/Photo.js',
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	var _reactTransformCatchErrors2 = (0, _reactTransformCatchErrors4.default)({
-	  filename: '/Users/drew/Desktop/poll_app_demo/client/components/Photo.js',
-	  components: _components,
-	  locals: [],
-	  imports: [_react3.default, _redboxReact3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(_reactTransformCatchErrors2(Component, id), id);
-	  };
-	}
-
-	var Photo = _wrapComponent('_component')(_react3.default.createClass({
-	  displayName: 'Photo',
-	  render: function render() {
-	    var _props = this.props,
-	        post = _props.post,
-	        i = _props.i,
-	        comments = _props.comments;
-
-	    return _react3.default.createElement(
-	      'figure',
-	      { className: 'grid-figure' },
-	      _react3.default.createElement(
-	        'div',
-	        { className: 'grid-photo-wrap' },
-	        _react3.default.createElement(
-	          _reactRouter.Link,
-	          { to: '/view/' + post.code },
-	          _react3.default.createElement('img', { src: post.display_src, alt: post.caption, className: 'grid-photo' })
-	        ),
-	        _react3.default.createElement(
-	          _reactAddonsCssTransitionGroup2.default,
-	          { transitionName: 'like', transitionEnterTimeout: 500, transitionLeaveTimeout: 500 },
-	          _react3.default.createElement(
-	            'span',
-	            { key: post.likes, className: 'likes-heart' },
-	            post.likes
-	          )
-	        )
-	      ),
-	      _react3.default.createElement(
-	        'figcaption',
-	        null,
-	        _react3.default.createElement(
-	          'p',
-	          null,
-	          post.caption
-	        ),
-	        _react3.default.createElement(
-	          'div',
-	          { className: 'control-buttons' },
-	          _react3.default.createElement(
-	            'button',
-	            { onClick: this.props.increment.bind(null, i), className: 'likes' },
-	            '\u2665 ',
-	            post.likes
-	          ),
-	          _react3.default.createElement(
-	            _reactRouter.Link,
-	            { className: 'button', to: '/view/' + post.code },
-	            _react3.default.createElement(
-	              'span',
-	              { className: 'comment-count' },
-	              _react3.default.createElement('span', { className: 'speech-bubble' }),
-	              comments[post.code] ? comments[post.code].length : 0
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	}));
-
-	exports.default = Photo;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)(module)))
-
-/***/ },
-/* 870 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(871);
-
-/***/ },
-/* 871 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 */
-
-	'use strict';
-
-	var _assign = __webpack_require__(16);
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var React = __webpack_require__(14);
-
-	var ReactTransitionGroup = __webpack_require__(646);
-	var ReactCSSTransitionGroupChild = __webpack_require__(872);
-
-	function createTransitionTimeoutPropValidator(transitionType) {
-	  var timeoutPropName = 'transition' + transitionType + 'Timeout';
-	  var enabledPropName = 'transition' + transitionType;
-
-	  return function (props) {
-	    // If the transition is enabled
-	    if (props[enabledPropName]) {
-	      // If no timeout duration is provided
-	      if (props[timeoutPropName] == null) {
-	        return new Error(timeoutPropName + ' wasn\'t supplied to ReactCSSTransitionGroup: ' + 'this can cause unreliable animations and won\'t be supported in ' + 'a future version of React. See ' + 'https://fb.me/react-animation-transition-group-timeout for more ' + 'information.');
-
-	        // If the duration isn't a number
-	      } else if (typeof props[timeoutPropName] !== 'number') {
-	        return new Error(timeoutPropName + ' must be a number (in milliseconds)');
-	      }
-	    }
-	  };
-	}
-
-	/**
-	 * An easy way to perform CSS transitions and animations when a React component
-	 * enters or leaves the DOM.
-	 * See https://facebook.github.io/react/docs/animation.html#high-level-api-reactcsstransitiongroup
-	 */
-
-	var ReactCSSTransitionGroup = function (_React$Component) {
-	  _inherits(ReactCSSTransitionGroup, _React$Component);
-
-	  function ReactCSSTransitionGroup() {
-	    var _temp, _this, _ret;
-
-	    _classCallCheck(this, ReactCSSTransitionGroup);
-
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-
-	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this._wrapChild = function (child) {
-	      // We need to provide this childFactory so that
-	      // ReactCSSTransitionGroupChild can receive updates to name, enter, and
-	      // leave while it is leaving.
-	      return React.createElement(ReactCSSTransitionGroupChild, {
-	        name: _this.props.transitionName,
-	        appear: _this.props.transitionAppear,
-	        enter: _this.props.transitionEnter,
-	        leave: _this.props.transitionLeave,
-	        appearTimeout: _this.props.transitionAppearTimeout,
-	        enterTimeout: _this.props.transitionEnterTimeout,
-	        leaveTimeout: _this.props.transitionLeaveTimeout
-	      }, child);
-	    }, _temp), _possibleConstructorReturn(_this, _ret);
-	  }
-
-	  ReactCSSTransitionGroup.prototype.render = function render() {
-	    return React.createElement(ReactTransitionGroup, _assign({}, this.props, { childFactory: this._wrapChild }));
-	  };
-
-	  return ReactCSSTransitionGroup;
-	}(React.Component);
-
-	ReactCSSTransitionGroup.displayName = 'ReactCSSTransitionGroup';
-	ReactCSSTransitionGroup.propTypes = {
-	  transitionName: ReactCSSTransitionGroupChild.propTypes.name,
-
-	  transitionAppear: React.PropTypes.bool,
-	  transitionEnter: React.PropTypes.bool,
-	  transitionLeave: React.PropTypes.bool,
-	  transitionAppearTimeout: createTransitionTimeoutPropValidator('Appear'),
-	  transitionEnterTimeout: createTransitionTimeoutPropValidator('Enter'),
-	  transitionLeaveTimeout: createTransitionTimeoutPropValidator('Leave')
-	};
-	ReactCSSTransitionGroup.defaultProps = {
-	  transitionAppear: false,
-	  transitionEnter: true,
-	  transitionLeave: true
-	};
-
-
-	module.exports = ReactCSSTransitionGroup;
-
-/***/ },
-/* 872 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 */
-
-	'use strict';
-
-	var React = __webpack_require__(14);
-	var ReactAddonsDOMDependencies = __webpack_require__(647);
-
-	var CSSCore = __webpack_require__(873);
-	var ReactTransitionEvents = __webpack_require__(874);
-
-	var onlyChild = __webpack_require__(43);
-
-	var TICK = 17;
-
-	var ReactCSSTransitionGroupChild = React.createClass({
-	  displayName: 'ReactCSSTransitionGroupChild',
-
-	  propTypes: {
-	    name: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.shape({
-	      enter: React.PropTypes.string,
-	      leave: React.PropTypes.string,
-	      active: React.PropTypes.string
-	    }), React.PropTypes.shape({
-	      enter: React.PropTypes.string,
-	      enterActive: React.PropTypes.string,
-	      leave: React.PropTypes.string,
-	      leaveActive: React.PropTypes.string,
-	      appear: React.PropTypes.string,
-	      appearActive: React.PropTypes.string
-	    })]).isRequired,
-
-	    // Once we require timeouts to be specified, we can remove the
-	    // boolean flags (appear etc.) and just accept a number
-	    // or a bool for the timeout flags (appearTimeout etc.)
-	    appear: React.PropTypes.bool,
-	    enter: React.PropTypes.bool,
-	    leave: React.PropTypes.bool,
-	    appearTimeout: React.PropTypes.number,
-	    enterTimeout: React.PropTypes.number,
-	    leaveTimeout: React.PropTypes.number
-	  },
-
-	  transition: function (animationType, finishCallback, userSpecifiedDelay) {
-	    var node = ReactAddonsDOMDependencies.getReactDOM().findDOMNode(this);
-
-	    if (!node) {
-	      if (finishCallback) {
-	        finishCallback();
-	      }
-	      return;
-	    }
-
-	    var className = this.props.name[animationType] || this.props.name + '-' + animationType;
-	    var activeClassName = this.props.name[animationType + 'Active'] || className + '-active';
-	    var timeout = null;
-
-	    var endListener = function (e) {
-	      if (e && e.target !== node) {
-	        return;
-	      }
-
-	      clearTimeout(timeout);
-
-	      CSSCore.removeClass(node, className);
-	      CSSCore.removeClass(node, activeClassName);
-
-	      ReactTransitionEvents.removeEndEventListener(node, endListener);
-
-	      // Usually this optional callback is used for informing an owner of
-	      // a leave animation and telling it to remove the child.
-	      if (finishCallback) {
-	        finishCallback();
-	      }
-	    };
-
-	    CSSCore.addClass(node, className);
-
-	    // Need to do this to actually trigger a transition.
-	    this.queueClassAndNode(activeClassName, node);
-
-	    // If the user specified a timeout delay.
-	    if (userSpecifiedDelay) {
-	      // Clean-up the animation after the specified delay
-	      timeout = setTimeout(endListener, userSpecifiedDelay);
-	      this.transitionTimeouts.push(timeout);
-	    } else {
-	      // DEPRECATED: this listener will be removed in a future version of react
-	      ReactTransitionEvents.addEndEventListener(node, endListener);
-	    }
-	  },
-
-	  queueClassAndNode: function (className, node) {
-	    this.classNameAndNodeQueue.push({
-	      className: className,
-	      node: node
-	    });
-
-	    if (!this.timeout) {
-	      this.timeout = setTimeout(this.flushClassNameAndNodeQueue, TICK);
-	    }
-	  },
-
-	  flushClassNameAndNodeQueue: function () {
-	    if (this.isMounted()) {
-	      this.classNameAndNodeQueue.forEach(function (obj) {
-	        CSSCore.addClass(obj.node, obj.className);
-	      });
-	    }
-	    this.classNameAndNodeQueue.length = 0;
-	    this.timeout = null;
-	  },
-
-	  componentWillMount: function () {
-	    this.classNameAndNodeQueue = [];
-	    this.transitionTimeouts = [];
-	  },
-
-	  componentWillUnmount: function () {
-	    if (this.timeout) {
-	      clearTimeout(this.timeout);
-	    }
-	    this.transitionTimeouts.forEach(function (timeout) {
-	      clearTimeout(timeout);
-	    });
-
-	    this.classNameAndNodeQueue.length = 0;
-	  },
-
-	  componentWillAppear: function (done) {
-	    if (this.props.appear) {
-	      this.transition('appear', done, this.props.appearTimeout);
-	    } else {
-	      done();
-	    }
-	  },
-
-	  componentWillEnter: function (done) {
-	    if (this.props.enter) {
-	      this.transition('enter', done, this.props.enterTimeout);
-	    } else {
-	      done();
-	    }
-	  },
-
-	  componentWillLeave: function (done) {
-	    if (this.props.leave) {
-	      this.transition('leave', done, this.props.leaveTimeout);
-	    } else {
-	      done();
-	    }
-	  },
-
-	  render: function () {
-	    return onlyChild(this.props.children);
-	  }
-	});
-
-	module.exports = ReactCSSTransitionGroupChild;
-
-/***/ },
-/* 873 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
-
-	/**
-	 * Copyright (c) 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @typechecks
-	 */
-
-	var invariant = __webpack_require__(20);
-
-	/**
-	 * The CSSCore module specifies the API (and implements most of the methods)
-	 * that should be used when dealing with the display of elements (via their
-	 * CSS classes and visibility on screen. It is an API focused on mutating the
-	 * display and not reading it as no logical state should be encoded in the
-	 * display of elements.
-	 */
-
-	/* Slow implementation for browsers that don't natively support .matches() */
-	function matchesSelector_SLOW(element, selector) {
-	  var root = element;
-	  while (root.parentNode) {
-	    root = root.parentNode;
-	  }
-
-	  var all = root.querySelectorAll(selector);
-	  return Array.prototype.indexOf.call(all, element) !== -1;
-	}
-
-	var CSSCore = {
-
-	  /**
-	   * Adds the class passed in to the element if it doesn't already have it.
-	   *
-	   * @param {DOMElement} element the element to set the class on
-	   * @param {string} className the CSS className
-	   * @return {DOMElement} the element passed in
-	   */
-	  addClass: function addClass(element, className) {
-	    !!/\s/.test(className) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'CSSCore.addClass takes only a single class name. "%s" contains ' + 'multiple classes.', className) : invariant(false) : void 0;
-
-	    if (className) {
-	      if (element.classList) {
-	        element.classList.add(className);
-	      } else if (!CSSCore.hasClass(element, className)) {
-	        element.className = element.className + ' ' + className;
-	      }
-	    }
-	    return element;
-	  },
-
-	  /**
-	   * Removes the class passed in from the element
-	   *
-	   * @param {DOMElement} element the element to set the class on
-	   * @param {string} className the CSS className
-	   * @return {DOMElement} the element passed in
-	   */
-	  removeClass: function removeClass(element, className) {
-	    !!/\s/.test(className) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'CSSCore.removeClass takes only a single class name. "%s" contains ' + 'multiple classes.', className) : invariant(false) : void 0;
-
-	    if (className) {
-	      if (element.classList) {
-	        element.classList.remove(className);
-	      } else if (CSSCore.hasClass(element, className)) {
-	        element.className = element.className.replace(new RegExp('(^|\\s)' + className + '(?:\\s|$)', 'g'), '$1').replace(/\s+/g, ' ') // multiple spaces to one
-	        .replace(/^\s*|\s*$/g, ''); // trim the ends
-	      }
-	    }
-	    return element;
-	  },
-
-	  /**
-	   * Helper to add or remove a class from an element based on a condition.
-	   *
-	   * @param {DOMElement} element the element to set the class on
-	   * @param {string} className the CSS className
-	   * @param {*} bool condition to whether to add or remove the class
-	   * @return {DOMElement} the element passed in
-	   */
-	  conditionClass: function conditionClass(element, className, bool) {
-	    return (bool ? CSSCore.addClass : CSSCore.removeClass)(element, className);
-	  },
-
-	  /**
-	   * Tests whether the element has the class specified.
-	   *
-	   * @param {DOMNode|DOMWindow} element the element to check the class on
-	   * @param {string} className the CSS className
-	   * @return {boolean} true if the element has the class, false if not
-	   */
-	  hasClass: function hasClass(element, className) {
-	    !!/\s/.test(className) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'CSS.hasClass takes only a single class name.') : invariant(false) : void 0;
-	    if (element.classList) {
-	      return !!className && element.classList.contains(className);
-	    }
-	    return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1;
-	  },
-
-	  /**
-	   * Tests whether the element matches the selector specified
-	   *
-	   * @param {DOMNode|DOMWindow} element the element that we are querying
-	   * @param {string} selector the CSS selector
-	   * @return {boolean} true if the element matches the selector, false if not
-	   */
-	  matchesSelector: function matchesSelector(element, selector) {
-	    var matchesImpl = element.matches || element.webkitMatchesSelector || element.mozMatchesSelector || element.msMatchesSelector || function (s) {
-	      return matchesSelector_SLOW(element, s);
-	    };
-	    return matchesImpl.call(element, selector);
-	  }
-
-	};
-
-	module.exports = CSSCore;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15)))
-
-/***/ },
-/* 874 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 */
-
-	'use strict';
-
-	var ExecutionEnvironment = __webpack_require__(875);
-
-	var getVendorPrefixedEventName = __webpack_require__(123);
-
-	var endEvents = [];
-
-	function detectEvents() {
-	  var animEnd = getVendorPrefixedEventName('animationend');
-	  var transEnd = getVendorPrefixedEventName('transitionend');
-
-	  if (animEnd) {
-	    endEvents.push(animEnd);
-	  }
-
-	  if (transEnd) {
-	    endEvents.push(transEnd);
-	  }
-	}
-
-	if (ExecutionEnvironment.canUseDOM) {
-	  detectEvents();
-	}
-
-	// We use the raw {add|remove}EventListener() call because EventListener
-	// does not know how to remove event listeners and we really should
-	// clean up. Also, these events are not triggered in older browsers
-	// so we should be A-OK here.
-
-	function addEventListener(node, eventName, eventListener) {
-	  node.addEventListener(eventName, eventListener, false);
-	}
-
-	function removeEventListener(node, eventName, eventListener) {
-	  node.removeEventListener(eventName, eventListener, false);
-	}
-
-	var ReactTransitionEvents = {
-	  addEndEventListener: function (node, eventListener) {
-	    if (endEvents.length === 0) {
-	      // If CSS transitions are not supported, trigger an "end animation"
-	      // event immediately.
-	      window.setTimeout(eventListener, 0);
-	      return;
-	    }
-	    endEvents.forEach(function (endEvent) {
-	      addEventListener(node, endEvent, eventListener);
-	    });
-	  },
-
-	  removeEndEventListener: function (node, eventListener) {
-	    if (endEvents.length === 0) {
-	      return;
-	    }
-	    endEvents.forEach(function (endEvent) {
-	      removeEventListener(node, endEvent, eventListener);
-	    });
-	  }
-	};
-
-	module.exports = ReactTransitionEvents;
-
-/***/ },
-/* 875 */
-/***/ function(module, exports) {
-
-	/**
-	 * Copyright (c) 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 */
-
-	'use strict';
-
-	var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
-
-	/**
-	 * Simple, lightweight module assisting with the detection and context of
-	 * Worker. Helps avoid circular dependencies and allows code to reason about
-	 * whether or not they are in a Worker, even if they never include the main
-	 * `ReactWorker` dependency.
-	 */
-	var ExecutionEnvironment = {
-
-	  canUseDOM: canUseDOM,
-
-	  canUseWorkers: typeof Worker !== 'undefined',
-
-	  canUseEventListeners: canUseDOM && !!(window.addEventListener || window.attachEvent),
-
-	  canUseViewport: canUseDOM && !!window.screen,
-
-	  isInWorker: !canUseDOM // For now, this is true - might change in the future.
-
-	};
-
-	module.exports = ExecutionEnvironment;
-
-/***/ },
-/* 876 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _redboxReact2 = __webpack_require__(241);
-
-	var _redboxReact3 = _interopRequireDefault(_redboxReact2);
-
-	var _reactTransformCatchErrors3 = __webpack_require__(247);
-
-	var _reactTransformCatchErrors4 = _interopRequireDefault(_reactTransformCatchErrors3);
-
-	var _react2 = __webpack_require__(13);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(248);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 	var _Poll = __webpack_require__(629);
 
 	var _Poll2 = _interopRequireDefault(_Poll);
@@ -90462,7 +89719,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)(module)))
 
 /***/ },
-/* 877 */
+/* 869 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -90474,36 +89731,33 @@
 
 	var _redux = __webpack_require__(200);
 
-	var _reactRouterRedux = __webpack_require__(878);
+	var _reactRouterRedux = __webpack_require__(870);
 
 	var _reactRouter = __webpack_require__(397);
 
-	var _index = __webpack_require__(883);
+	var _index = __webpack_require__(875);
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _comments = __webpack_require__(887);
+	var _comments = __webpack_require__(878);
 
 	var _comments2 = _interopRequireDefault(_comments);
 
-	var _posts = __webpack_require__(888);
-
-	var _posts2 = _interopRequireDefault(_posts);
-
-	var _polls = __webpack_require__(889);
+	var _polls = __webpack_require__(879);
 
 	var _polls2 = _interopRequireDefault(_polls);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	// import the root reducer
 	var comments = JSON.parse(localStorage.getItem('_comments')) || _comments2.default;
+
+	// import the root reducer
+
 	var polls = JSON.parse(localStorage.getItem('_polls')) || _polls2.default;
 
 	// create an object for the default data
 	var defaultState = {
 	  polls: polls,
-	  posts: _posts2.default,
 	  comments: comments
 	};
 
@@ -90512,8 +89766,8 @@
 	var history = exports.history = (0, _reactRouterRedux.syncHistoryWithStore)(_reactRouter.browserHistory, store);
 
 	if (true) {
-	  module.hot.accept(883, function () {
-	    var nextRootReducer = __webpack_require__(883).default;
+	  module.hot.accept(875, function () {
+	    var nextRootReducer = __webpack_require__(875).default;
 	    store.replaceReducer(nextRootReducer);
 	  });
 	}
@@ -90521,7 +89775,7 @@
 	exports.default = store;
 
 /***/ },
-/* 878 */
+/* 870 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -90531,7 +89785,7 @@
 	});
 	exports.routerMiddleware = exports.routerActions = exports.goForward = exports.goBack = exports.go = exports.replace = exports.push = exports.CALL_HISTORY_METHOD = exports.routerReducer = exports.LOCATION_CHANGE = exports.syncHistoryWithStore = undefined;
 
-	var _reducer = __webpack_require__(879);
+	var _reducer = __webpack_require__(871);
 
 	Object.defineProperty(exports, 'LOCATION_CHANGE', {
 	  enumerable: true,
@@ -90546,7 +89800,7 @@
 	  }
 	});
 
-	var _actions = __webpack_require__(880);
+	var _actions = __webpack_require__(872);
 
 	Object.defineProperty(exports, 'CALL_HISTORY_METHOD', {
 	  enumerable: true,
@@ -90591,11 +89845,11 @@
 	  }
 	});
 
-	var _sync = __webpack_require__(881);
+	var _sync = __webpack_require__(873);
 
 	var _sync2 = _interopRequireDefault(_sync);
 
-	var _middleware = __webpack_require__(882);
+	var _middleware = __webpack_require__(874);
 
 	var _middleware2 = _interopRequireDefault(_middleware);
 
@@ -90605,7 +89859,7 @@
 	exports.routerMiddleware = _middleware2['default'];
 
 /***/ },
-/* 879 */
+/* 871 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -90648,7 +89902,7 @@
 	}
 
 /***/ },
-/* 880 */
+/* 872 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -90690,7 +89944,7 @@
 	var routerActions = exports.routerActions = { push: push, replace: replace, go: go, goBack: goBack, goForward: goForward };
 
 /***/ },
-/* 881 */
+/* 873 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -90703,7 +89957,7 @@
 
 	exports['default'] = syncHistoryWithStore;
 
-	var _reducer = __webpack_require__(879);
+	var _reducer = __webpack_require__(871);
 
 	var defaultSelectLocationState = function defaultSelectLocationState(state) {
 	  return state.routing;
@@ -90848,7 +90102,7 @@
 	}
 
 /***/ },
-/* 882 */
+/* 874 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -90858,7 +90112,7 @@
 	});
 	exports['default'] = routerMiddleware;
 
-	var _actions = __webpack_require__(880);
+	var _actions = __webpack_require__(872);
 
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
@@ -90886,7 +90140,7 @@
 	}
 
 /***/ },
-/* 883 */
+/* 875 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -90897,59 +90151,24 @@
 
 	var _redux = __webpack_require__(200);
 
-	var _reactRouterRedux = __webpack_require__(878);
+	var _reactRouterRedux = __webpack_require__(870);
 
-	var _posts = __webpack_require__(884);
-
-	var _posts2 = _interopRequireDefault(_posts);
-
-	var _comments = __webpack_require__(885);
+	var _comments = __webpack_require__(876);
 
 	var _comments2 = _interopRequireDefault(_comments);
 
-	var _polls = __webpack_require__(886);
+	var _polls = __webpack_require__(877);
 
 	var _polls2 = _interopRequireDefault(_polls);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var rootReducer = (0, _redux.combineReducers)({ posts: _posts2.default, comments: _comments2.default, polls: _polls2.default, routing: _reactRouterRedux.routerReducer });
+	var rootReducer = (0, _redux.combineReducers)({ comments: _comments2.default, polls: _polls2.default, routing: _reactRouterRedux.routerReducer });
 
 	exports.default = rootReducer;
 
 /***/ },
-/* 884 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-	function posts() {
-	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-	  var action = arguments[1];
-
-	  switch (action.type) {
-	    case 'INCREMENT_LIKES':
-	      console.log("Incrementing Likes!!");
-	      var i = action.index;
-	      return [].concat(_toConsumableArray(state.slice(0, i)), [// before the one we are updating
-	      _extends({}, state[i], { likes: state[i].likes + 1 })], _toConsumableArray(state.slice(i + 1)));
-	    default:
-	      return state;
-	  }
-	}
-
-	exports.default = posts;
-
-/***/ },
-/* 885 */
+/* 876 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -91003,7 +90222,7 @@
 	exports.default = comments;
 
 /***/ },
-/* 886 */
+/* 877 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -91040,7 +90259,7 @@
 	exports.default = polls;
 
 /***/ },
-/* 887 */
+/* 878 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -91268,164 +90487,7 @@
 	exports.default = comments;
 
 /***/ },
-/* 888 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	   value: true
-	});
-	var posts = [{
-	   "code": "BAcyDyQwcXX",
-	   "caption": "Lunch #hamont",
-	   "likes": 56,
-	   "id": "1161022966406956503",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-15/e35/12552326_495932673919321_1443393332_n.jpg"
-	}, {
-	   "code": "BAcJeJrQca9",
-	   "caption": "Snow! ⛄️🌨❄️ #lifewithsnickers",
-	   "likes": 59,
-	   "id": "1160844458347054781",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e35/12407344_1283694208323785_735653395_n.jpg"
-	}, {
-	   "code": "BAF_KY4wcRY",
-	   "caption": "Cleaned my office and mounted my recording gear overhead. Stoked for 2016!",
-	   "likes": 79,
-	   "id": "1154606670337393752",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xpf1/t51.2885-15/e35/923995_1704188643150533_1383710275_n.jpg"
-	}, {
-	   "code": "BAPIPRjQce9",
-	   "caption": "Making baby pancakes for one early rising baby. ☕️🍴",
-	   "likes": 47,
-	   "id": "1157179863266871229",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-15/e35/12407480_1654828594805097_152207166_n.jpg"
-	}, {
-	   "code": "-hZh6IQcfN",
-	   "caption": "New Stickers just came in. I'll do another mailing in a few weeks if you want some. #javascript",
-	   "likes": 66,
-	   "id": "1126293663140399053",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-15/e35/11875511_1562439187344831_813588280_n.jpg"
-	}, {
-	   "code": "-B3eiIwcYV",
-	   "caption": "Tacos for breakfast. I love you Austin. 🇺🇸",
-	   "likes": 33,
-	   "id": "1117418173361145365",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/e35/11917950_927755223968499_1198055371_n.jpg"
-	}, {
-	   "code": "BAhvZrRwcfu",
-	   "caption": "Tried poke for the first time at @pokehbar. Delicious! It's like a bowl of sushi",
-	   "likes": 30,
-	   "id": "1162418651480049646",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xpa1/t51.2885-15/e35/12501993_1504179163220771_2060674913_n.jpg"
-	}, {
-	   "code": "BAAJqbOQcW5",
-	   "caption": "Brunchin'",
-	   "likes": 40,
-	   "id": "1152964002473690553",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-15/e35/1516572_445736812276082_2116173059_n.jpg"
-	}, {
-	   "code": "_4jHytwcUA",
-	   "caption": "2015 can be summed up with one baby and a many lines of code. And sometimes a coding baby. 👶🏼⌨",
-	   "likes": 62,
-	   "id": "1150824171912152320",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/e35/10723795_1149927178351091_1859033096_n.jpg"
-	}, {
-	   "code": "_zbaOlQcbn",
-	   "caption": "Lekker Chocoladeletter",
-	   "likes": 52,
-	   "id": "1149382879529256679",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/e35/12346073_1035047523184672_768982339_n.jpg"
-	}, {
-	   "code": "_rmvQfQce8",
-	   "caption": "Just discovered the #hamont farmers market has a new ramen place! 🍜",
-	   "likes": 35,
-	   "id": "1147180903383025596",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xft1/t51.2885-15/e35/12331739_1671776806423597_995664526_n.jpg"
-	}, {
-	   "code": "_ep9kiQcVy",
-	   "caption": "⛄️",
-	   "likes": 64,
-	   "id": "1143535906423162226",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xft1/t51.2885-15/e35/12354078_447337935474115_1484398925_n.jpg"
-	}, {
-	   "code": "_XpJcrwcSn",
-	   "caption": "6 page spread on flexbox in this months netmag!",
-	   "likes": 74,
-	   "id": "1141561999742846119",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/e35/12362588_1688046211438811_1395882545_n.jpg"
-	}, {
-	   "code": "_KnU7MwceA",
-	   "caption": "Hanging out in my office waiting for 5:00 beers to come around.",
-	   "likes": 54,
-	   "id": "1137894817632733056",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/e35/12301208_1533749386944985_1334730917_n.jpg"
-	}, {
-	   "code": "_HMejJQcY5",
-	   "caption": "Today I learned that a long pull espresso is called a 'lungo'",
-	   "likes": 18,
-	   "id": "1136932306813044281",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xft1/t51.2885-15/e35/12357319_493317964181479_310198908_n.jpg"
-	}, {
-	   "code": "_Fq2zmwcaz",
-	   "caption": "Awesome hand lettered gift from @eunibae and the HackerYou crew.",
-	   "likes": 48,
-	   "id": "1136502965197194931",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/e35/12317458_1692845870986430_331905833_n.jpg"
-	}, {
-	   "code": "_A2r0aQcfD",
-	   "caption": "Some serious hardware meet JavaScript hacks going down this week at hackeryou. Excited for demo day!",
-	   "likes": 57,
-	   "id": "1135147611821557699",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e35/12276809_750065668431999_184252508_n.jpg"
-	}, {
-	   "code": "-1rhFawccs",
-	   "caption": "Some major audio upgrades coming to my next videos 😍",
-	   "likes": 39,
-	   "id": "1132002270913873708",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e35/12331333_1650987978502155_1162510634_n.jpg"
-	}, {
-	   "code": "-pjx-gQcVi",
-	   "caption": "My baby and me. Thanks to @bearandsparrow for this one.",
-	   "likes": 81,
-	   "id": "1128590547628442978",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xtf1/t51.2885-15/e35/12298962_863814057068027_460827278_n.jpg"
-	}, {
-	   "code": "-oTZ0zQcWt",
-	   "caption": "It's too early. Send coffee.",
-	   "likes": 81,
-	   "id": "1128237044221461933",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xtf1/t51.2885-15/e35/12328347_990748230999662_1512917342_n.jpg"
-	}, {
-	   "code": "-mxKQoQcQh",
-	   "caption": "They both have figured it out. #lifewithsnickers",
-	   "likes": 47,
-	   "id": "1127804966031967265",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xtp1/t51.2885-15/e35/12256736_1758525004381641_1136705181_n.jpg"
-	}, {
-	   "code": "-fasqlQceO",
-	   "caption": "Kaitlin decorated the house for the Christmas. So gezellig! #casabos",
-	   "likes": 46,
-	   "id": "1125735850454402958",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xpt1/t51.2885-15/e35/12277581_1028556737218368_1184190781_n.jpg"
-	}, {
-	   "code": "-VBgtGQcSf",
-	   "caption": "Trying the new Hamilton Brewery beer. Big fan.",
-	   "likes": 27,
-	   "id": "1122810327591928991",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e35/12224456_175248682823294_1558707223_n.jpg"
-	}, {
-	   "code": "-FpTyHQcau",
-	   "caption": "I'm in Austin for a conference and doing some training. Enjoying some local brew with my baby.",
-	   "likes": 82,
-	   "id": "1118481761857291950",
-	   "display_src": "https://scontent.cdninstagram.com/hphotos-xpt1/t51.2885-15/e35/11326072_550275398458202_1726754023_n.jpg"
-	}];
-
-	exports.default = posts;
-
-/***/ },
-/* 889 */
+/* 879 */
 /***/ function(module, exports) {
 
 	"use strict";

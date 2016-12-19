@@ -8,7 +8,6 @@ import css from './styles/style.styl';
 // Import Components
 import App from './components/App';
 import Single from './components/Single';
-import PhotoGrid from './components/PhotoGrid';
 import PollGrid from './components/PollGrid';
 
 // import react router deps
