@@ -6,6 +6,9 @@ var config = require('./webpack.config.dev');
 var app = express();
 var compiler = webpack(config);
 
+require('es6-promise').polyfill();
+app.use(express.static(__dirname + '/'));
+
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: true,
   publicPath: config.output.publicPath
