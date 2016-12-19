@@ -17,7 +17,7 @@ import store, { history } from './store';
 
 const router = (
   <Provider store={store}>
-    <Router history={history}>
+    <Router onUpdate={() => window.scrollTo(0, 0)} history={history}>
       <Route path="/" component={App}>
         <IndexRoute component={PollGrid}></IndexRoute>
         <Route path="/view/:pollId" component={Single}></Route>
