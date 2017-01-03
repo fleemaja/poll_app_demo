@@ -33,8 +33,6 @@ const DonutChart = React.createClass({
     		]
     	}]
     };
-    // const chartData = poll.options.map(function(o) { return o.votes });
-    // const chartLabels = poll.options.map(function(o) { return o.option });
     return (
       <Paper style={styles.paper}>
         <Doughnut
