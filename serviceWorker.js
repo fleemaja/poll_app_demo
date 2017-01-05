@@ -9,7 +9,7 @@ self.addEventListener('install', function(event) {
         '/',
         'index.html',
         'manifest.json',
-        'static/bundle.js'
+        'public/bundle.js'
       ]);
     })
   );
