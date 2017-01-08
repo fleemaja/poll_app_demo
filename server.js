@@ -1,6 +1,6 @@
 const path = require('path');
 const express = require('express');
-const port = (process.env.PORT || 7777)
+const port = (process.env.PORT || 7773)
 
 require('es6-promise').polyfill();
 
@@ -20,6 +20,8 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 app.use(express.static(__dirname + '/'));
+app.use('/public', express.static(path.join(__dirname, './public')));
+app.use('/img', express.static(path.join(__dirname, './img')));
 
 app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
