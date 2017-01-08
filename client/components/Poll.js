@@ -99,11 +99,12 @@ const Poll = React.createClass({
               <RadioButtonGroup name="option" onChange={this.selectOption}>
                 {poll.options.map(function(o, i){
                   return <RadioButton value={o['option']} label={o['option']}
+                         aria-label={o['option']}
                          style={styles.radioButton} />
                 })}
               </RadioButtonGroup>
             </div>
-            <RaisedButton disabled={this.state.disabled} onClick={this.makeVote} label="Vote" style={styles.raisedButton} />
+            <RaisedButton disabledLabelColor="#333" disabled={this.state.disabled} onClick={this.makeVote} label="Vote" style={styles.raisedButton} />
           </div>
         </Paper>
       )

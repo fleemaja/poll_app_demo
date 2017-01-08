@@ -57,8 +57,13 @@ const Comments = React.createClass({
     }
   },
   render() {
-    const style = {
-      "marginTop": 20,
+    const styles = {
+      "button": {
+        "marginTop": 20
+      },
+      "floating": {
+        "color": "#767676"
+      }
     };
     return (
       <div className="comments-section">
@@ -69,18 +74,18 @@ const Comments = React.createClass({
               <TextField value={this.state.author}
                          onChange={this._handleAuthorChange}
                          onBlur={this._setAuthorErrorText}
-                         hintText="Choose a Name for this Comment"
                          errorText={this.state.aErrorText}
-                         floatingLabelText="Author"/><br/>
+                         floatingLabelText="Author"
+                         floatingLabelStyle={styles.floating}/><br/>
               <TextField value={this.state.comment}
                          onChange={this._handleCommentChange}
                          onBlur={this._setCommentErrorText}
                          fullWidth={true}
-                         hintText="Comment About this Poll"
                          errorText={this.state.cErrorText}
-                         floatingLabelText="Comment"/>
+                         floatingLabelText="Comment"
+                         floatingLabelStyle={styles.floating}/>
               <input type="submit" hidden />
-              <RaisedButton label="Submit" style={style} primary={true} onClick={this.handleSubmit} />
+              <RaisedButton label="Submit" style={styles.button} backgroundColor="#007aca" labelColor="#fff" onClick={this.handleSubmit} />
             </form>
             <div className="commented">
               {this.props.pollComments.map(this.renderComment)}
