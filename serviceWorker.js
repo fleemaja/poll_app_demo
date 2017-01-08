@@ -1,6 +1,6 @@
 importScripts('serviceworker-cache-polyfill.js');
 
-var staticCacheName = 'polls-v0.13';
+var staticCacheName = 'polls-v0.14';
 
 self.addEventListener('install', function(event) {
   event.waitUntil(

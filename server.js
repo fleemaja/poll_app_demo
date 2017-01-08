@@ -1,6 +1,6 @@
 const path = require('path');
 const express = require('express');
-const port = (process.env.PORT || 7770)
+const port = (process.env.PORT || 7777)
 
 require('es6-promise').polyfill();
 
@@ -19,10 +19,10 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(require('webpack-hot-middleware')(compiler));
 }
 
-app.use('/public', express.static(path.join(__dirname, './public')));
+app.use(express.static(__dirname + '/'));
 
-app.get('/', function(_, res) {
-  res.sendFile(path.join(__dirname, './index.html'));
+app.get('*', function(req, res) {
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(port);

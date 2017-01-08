@@ -99,7 +99,7 @@ const Poll = React.createClass({
               <RadioButtonGroup name="option" onChange={this.selectOption}>
                 {poll.options.map(function(o, i){
                   return <RadioButton value={o['option']} label={o['option']}
-                         aria-label={o['option']}
+                         aria-label={o['option']} key={i} 
                          style={styles.radioButton} />
                 })}
               </RadioButtonGroup>
