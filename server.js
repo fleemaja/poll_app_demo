@@ -1,6 +1,6 @@
 const path = require('path');
 const express = require('express');
-const port = (process.env.PORT || 7773)
+const port = (process.env.PORT || 8008)
 
 require('es6-promise').polyfill();
 

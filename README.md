@@ -16,4 +16,4 @@ Navigate to the project root and do the following:
 
 ##### 2. run the webpack module bundler and start the server
   * run `npm start`
-  * open `http://localhost:8080/` in a browser to use the web app
+  * open `http://localhost:8008/` in a browser to use the web app
