@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
-const port = (process.env.PORT || 8008)
+const port = (process.env.PORT || 8008);
+const https = require("https");
 
 require('es6-promise').polyfill();
 
@@ -29,3 +30,7 @@ app.get('*', function(req, res) {
 
 app.listen(port);
 console.log('Listening at http://localhost:' + port);
+
+setInterval(function() {
+    https.get("https://poll-vault.herokuapp.com/");
+}, 1740000); // ping site every 29 minutes to keep heroku dynos from sleeping
